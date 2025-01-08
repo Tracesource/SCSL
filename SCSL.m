@@ -34,7 +34,7 @@ if ini == 1
             break;
         end
         [~,CC] = kmeans(X{iv},k, 'MaxIter',100,'Replicates',10);
-        G = G+CC.*(eff_g*ones(1,k))';
+        G = G+CC'.*(eff_g*ones(1,k))';
     end
 end
 if ini == 2
