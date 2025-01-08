@@ -65,7 +65,7 @@ for iv = 1:numview
             a(ii) = norm(X{iv}(:,index{iv}(ii))-X{iv}(:,index{iv}(jj)),'fro')^2;
             b(ii) = norm(G(:,index{iv}(ii))-G(:,index{iv}(jj)),'fro')^2;
         end
-        [s(:,jj),~] = EProjSimplex_new_ZJP_V2(2*a,lambda/2*b);
+        [s(:,jj),~] = EProjSimplex_new(2*a,lambda/2*b);
     end
     S = S+(H*s*H').*(eff_g*ones(1,numsample))';
 end
