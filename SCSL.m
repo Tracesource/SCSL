@@ -134,7 +134,7 @@ while flag
     end
     A = A.*Omega;
     parfor jj=1:numsample
-        [S(:,jj),~] = EProjSimplex_new_ZJP_V2(2*A(:,jj),lambda/2*B(:,jj));
+        [S(:,jj),~] = EProjSimplex_new(2*A(:,jj),lambda/2*B(:,jj));
     end
     
     %%
