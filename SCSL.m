@@ -1,4 +1,4 @@
-function [S,G,iter,obj] = missingalgo_qp_each_1(X,Y,beta,lambda,ind,index,ini)
+function [S,G,iter,obj] = SCSL(X,Y,beta,lambda,ind,index,ini)
 
 %% initialize
 maxIter = 50 ; % the number of iterations
